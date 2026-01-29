@@ -1,0 +1,6 @@
+Mostrar tabla con juegos: hecho
+link con datos de un unico juego: hecho
+guardar juego nuevo: hecho y rehecho
+borrar juego: hecho
+actualizar juego: hecho
+filtro juegos: hecho

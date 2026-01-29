@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+}
+/* cabecera */
+header {
+    margin: -4% -1% 0 -1%;
+    padding: 1%;
+}
+h1{
+    border-bottom: 3px solid black;
+    text-shadow: 3px 3px 5px grey;
+    background-color: rgb(235, 235, 235);
+    font-size: 50px;
+    padding: 1%;
+    text-align: center;
+}
+
+/* main/cuerpo */
+main{
+    margin-bottom: 7%;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 3px 3px 5px grey;
+}
+
+/* filtros de juegos */
+#filtrosJuegos{
+    background-color: rgb(235, 235, 235);
+    border: 2px solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+}
+#filtrosJuegos *:not(div, button){
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    width: 60%;
+}
+
+#filtrosJuegos label {
+    margin-top: 2%;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+select {
+    border: 2px solid;
+    cursor: pointer;
+}
+select:hover {
+    border-color:blue;
+}
+
+/* Tabla de juegos */
+
+#listaJuegos {
+    border-collapse: collapse;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+#listaJuegos thead, th, td {
+    border: 3px solid black;
+}
+
+#listaJuegos thead, th{
+    background-color: lightgrey;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+th, td {
+    padding: 4px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.botones button{
+    height: 20px;
+}
+
+button, input[type='button'] {
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+button:hover , input[type='button']:hover{
+    border-color: blue;
+    color:blue;
+    cursor: pointer;
+}
+
+#irAñadirJuego {
+    margin: 2%;
+}
+
+
+/* Informacion juego */
+#infoJuego{
+    background-color: lightgrey;
+    border: 4px solid black;
+    border-radius: 5px;
+    display: flex;
+    gap: 10%;
+    margin: 0 5%;
+}
+
+#infoJuego div {
+    padding: 1%;
+}
+
+/* datos juego */
+#datosJuego{
+    overflow-wrap: break-word;
+    width: 50%;
+}
+
+#datosJuego p {
+    margin-left: 2%;
+    padding-right: 1%;
+}
+#datosJuego p span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* parrafos normales */
+.parrafoComun {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/*  imagen juego */
+#imagenJuego {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-right: 1%;
+    width: 50%;
+}
+#imagenJuego img {
+    border: 4px solid black;
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: auto;
+}
+
+/* enlaces */
+a {
+    display: flex;
+}
+
+a:hover {
+    text-shadow: 1px 1px 10px;
+}
+.actualizarInfo{
+    color: green;
+}
+
+.borrarJuego{
+    color: red;
+}
+
+.masInfo{
+    color: blue;
+}
+
+
+
+/* Formularios */
+.formularioContenedor{
+    align-items: center;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+}
+form label{
+    margin-top: 4%;
+}
+input:not([type="file"]), textarea {
+    border: 2px solid black;
+}
+
+input:not([type="file"]):hover, textarea:hover {
+    border: 2px solid blue;
+}
+
+
+
+/* pie de pagina */
+#piePagina{
+    text-align: center;
+}
+

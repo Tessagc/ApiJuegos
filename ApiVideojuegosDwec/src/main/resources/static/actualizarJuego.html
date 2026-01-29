@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Actualizar Juego</title>
+    <link rel="stylesheet" href="css/juegos.css">
+    <script src="js/actualizarJuego.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="tituloActualizar">Actualizar informacion del Juego</h1>
+    </header>
+    <main>
+        <section class="formularioContenedor">
+            <form method="post" id="formulario">
+                <!-- id del juego -->
+                <input type="hidden" id="idJuego">
+
+                <label for="actualizarNombre">Titulo: </label>
+                <input type="text" name="actualizarNombre" id="actualizarNombre" required>
+
+                <label for="actualizarPlataforma">Plataforma: </label>
+                <select name="actualizarPlataforma" id="actualizarPlataforma" required>
+                    <option value="" selected hidden>Seleccione una plataforma</option>
+                </select>
+
+                <label for="actualizarGenero">Genero: </label>
+                <select name="actualizarGenero" id="actualizarGenero" required>
+                    <option value="" selected hidden>Seleccione un genero</option>
+                </select>
+
+                <label for="actualizarAño">Año: </label>
+                <input type="number" name="actualizarAño" id="actualizarAño" required min="1960" max="2026">
+
+                <label for="actualizarNota">Nota: </label>
+                <input type="number" name="actualizarNota" id="actualizarNota" required step="0.01">
+
+                <label for="actualizarPrecio">Precio (€): </label>
+                <input type="number" name="actualizarPrecio" id="actualizarPrecio" required step="0.01">
+
+                <label for="actualizarCompañia">Compañia: </label>
+                <input type="text" name="actualizarCompañia" id="actualizarCompañia" required>
+
+                <label for="actualizarPortada">Portada: </label>
+                <input type="file" name="actualizarPortada" id="actualizarPortada" accept="image/*" required>
+
+                <label for="actualizarEstado">Estado: </label>
+                <select name="actualizarEstado" id="actualizarEstado" required>
+                    <option value="" selected hidden>Seleccione un genero</option>
+                </select>
+
+                <label for="actualizarDescripcion">Descripcion: </label>
+                <textarea name="actualizarDescripcion" id="actualizarDescripcion" cols="35" rows="10">
+
+                </textarea>
+
+                <!-- Botones -->
+                <div class="botones">
+                    <input type="button" value="Guardar" id="actualizarJuego">
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p id="piePagina">Todos los derechos reservados: no copiar o habra repercusiones</p>
+    </footer>
+</body>
+</html>

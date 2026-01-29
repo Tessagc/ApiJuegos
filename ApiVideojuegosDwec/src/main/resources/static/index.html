@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos</title>
+    <link rel="stylesheet" href="css/juegos.css">
+    <script src="js/juegosIndex.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="encabezadoCabecera">Gestion de Videojuegos</h1>
+
+        <!-- Filtro de videojuegos -->
+        <h2>Filtrar Juegos</h2>
+        <div id="filtrosJuegos">
+            <label for="filtroEstado">Estado: </label>
+            <select name="filtroEstado" id="filtroEstado">
+                <option value="#" selected hidden>Seleccione un Estado</option>
+                <option value="#">CUALQUIERA</option>
+            </select>
+
+            <label for="filtroPlataforma">Plataforma: </label>
+            <select name="filtroPlataforma" id="filtroPlataforma">
+                <option value="#" selected hidden>Seleccione un plataforma</option>
+                <option value="#">CUALQUIERA</option>
+            </select>
+
+            <label for="filtroGenero">Genero: </label>
+            <select name="filtroGenero" id="filtroGenero">
+                <option value="#" selected hidden>Seleccione un genero</option>
+                <option value="#">CUALQUIERA</option>
+            </select>
+            <div class="botones">
+                <button type="button" id="botonFiltro" onclick="cargarJuegos()">Filtrar</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- tabla de Videojuegos -->
+        <section> 
+            <h2>Tabla de juegos</h2>
+            <div class="botones">
+                <button type="button" id="irAñadirJuego" onclick="irAñadirJuego()">Añadir un nuevo juego</button>
+            </div>
+            <table border="1" id="listaJuegos">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Plataforma</th>
+                        <th>Genero</th>
+                        <th>Estado</th>
+                        <th>Precio</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                </tbody>
+            </table>
+
+            <p class="parrafoComun">Ordenar Titulo:</p>
+            <div class="botones">
+                <button type="button" value="asc" class="orden">Ascendente</button>
+                <button type="button" value="desc" class="orden">Descendente</button>
+            </div>
+            
+        </section>
+
+        
+    </main>
+    <footer>
+        <hr>
+        <p id="piePagina">Todos los derechos reservados: no copiar o habra repercusiones</p>
+    </footer>
+    
+</body>
+</html>

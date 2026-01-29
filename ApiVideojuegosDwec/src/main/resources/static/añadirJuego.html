@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Juego</title>
+    <link rel="stylesheet" href="css/juegos.css">
+    <script src="js/añadirJuego.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Añadir un nuevo Juego</h1>
+    </header>
+    <main>
+        <section class="formularioContenedor">
+            <form method="post">
+                <label for="nuevoTitulo">Titulo: </label>
+                <input type="text" name="nuevoTitulo" id="nuevoTitulo" required>
+
+                <label for="nuevoPlataforma">Plataforma: </label>
+                <select name="nuevoPlataforma" id="nuevoPlataforma" required>
+                    <option value="" selected hidden>Seleccione una plataforma</option>
+                </select>
+
+                <label for="nuevoGenero">Genero: </label>
+                <select name="nuevoGenero" id="nuevoGenero" required>
+                    <option value="" selected hidden>Seleccione un genero</option>
+                </select>
+
+                <label for="nuevoAño">Año: </label>
+                <input type="number" name="nuevoAño" id="nuevoAño" required min="1960" max="2026">
+
+                <label for="nuevoNota">Nota: </label>
+                <input type="number" name="nuevoNota" id="nuevoNota" required step="0.01">
+
+                <label for="nuevoPrecio">Precio (€): </label>
+                <input type="number" name="nuevoPrecio" id="nuevoPrecio" required step="0.01">
+
+                <label for="nuevoCompañia">Compañia: </label>
+                <input type="text" name="nuevoCompañia" id="nuevoCompañia" required>
+
+                <label for="nuevoPortada">Portada: </label>
+                <input type="file" name="nuevoPortada" id="nuevoPortada" accept="image/*" required>
+
+                <label for="nuevoEstado">Estado: </label>
+                <select name="nuevoEstado" id="nuevoEstado" required>
+                    <option value="" selected hidden>Seleccione un estado</option>
+                </select>
+
+                <label for="nuevoDescripcion">Descripcion: </label>
+                <textarea name="nuevoDescripcion" id="nuevoDescripcion" cols="35" rows="10">
+
+                </textarea>
+
+                <!-- Botones -->
+                <div class="botones">
+                    <button type="button" id="guardarJuego">Guardar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+            <p id="infoGuardado"></p>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p id="piePagina">Todos los derechos reservados: no copiar o habra repercusiones</p>
+    </footer>
+</body>
+</html>
